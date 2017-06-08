@@ -1,0 +1,43 @@
+body{background: url('../Sylviane-olivier.png')no-repeat center rgba(254,255,229,1);color:rgba(149,109,100,1);/*font-family: 'Shadows Into Light', cursive;*/font-weight:bold;letter-spacing:0.1EM;overflow-x:hidden;}
+img{margin:0;padding:0;}
+#global{background:rgba(254,255,229,0.6);margin:0;padding:0;display:flex;flex-direction:column;justify-content:center;width:80%;margin-left:192px;z-index:2;}
+
+
+
+#desc_global{border:none;}
+#desc{font-size:17px;}
+#galery{background:url('../s.png')no-repeat center;height:300px;}
+
+
+
+#section_1{padding-top:50px;padding-bottom: 50px;display:flex;justify-content:center;align-items:center;padding-left:0;padding-right:0;}
+#pres_contener_desc{margin-right:500px;}
+
+
+
+#section_2{height:600px;}
+#section_2 #dialog p{font-size:15px;color:rgba(149,109,100,1);}
+
+
+
+
+
+
+#comms{width:auto;height:auto;margin:0;padding:0;}
+footer{width:100%;height:350px;background:rgba(149,109,100,1);color:rgba(255,255,255,1);margin:0;padding:0;}
+footer #footer_res_soc{width:300px;height:70px;margin-top:250px;}
+#logo_coms{width:100px;height:100px;padding:0;}
+i{margin:0;padding:0;color:rgba(93, 64, 55,1);}
+i:hover{color:rgba(169,107,41,0.5);}
+
+
+@media screen {
+	
+}
+/*.menu-bloc{width:100px;height:150px;background:rgba(109,76,65,1);text-align:center;margin-top:100px;}
+.menu-bloc .fa{margin-top:50px;}
+
+
+.menu-global ul{list-style-type:none;margin:0;padding:0;display:flex;justify-content:space-between;}
+.menu-global ul li a{color:rgba(255,255,255,1);}
+.menu-global ul li a:hover{color:rgba(255,255,255,1);text-decoration:none;padding-top:50px;}*/
