@@ -190,3 +190,10 @@ h1 {
 .commentaire {
   font-style:italic;
 }
+
+.artcile1{
+  border-right: dashed 2px #CDA545;
+}
+.artcile2{
+  border-right: dashed 2px #CDA545;
+}
