@@ -1,0 +1,6 @@
+﻿# on bloque le dossier et son contenu créé par netbeans
+/nbproject/
+
+
+# on bloque le fichier de config.php
+config.php
