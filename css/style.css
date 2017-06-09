@@ -197,3 +197,14 @@ h1 {
 .artcile2{
   border-right: dashed 2px #CDA545;
 }
+.contactfooter{
+  margin-left: 7em !important;
+  font-size: 1.5em;
+}
+.footer-center{
+  width: 30em;
+  margin-left: -5em;
+}
+.footer-links{
+  margin-top: 0px !important;
+}
