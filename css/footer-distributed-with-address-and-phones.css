@@ -9,7 +9,7 @@
     left: 0;
     right: 0;
 	padding: 55px 50px;
-	margin-top: 80px;
+	margin-top: 30px;
 }
 
 .footer-distributed .footer-left,
@@ -42,10 +42,11 @@
 
 .footer-distributed .footer-links a{
 	display:inline-block;
-	line-height: 1.8;
+	line-height: 1.8em;
 	text-decoration: none;
 	color:  inherit;
 }
+
 .footer-distributed .footer-links li{
 	list-style-type: none; 
 	text-align: center;
@@ -66,7 +67,7 @@
 	height: 38px;
 	border-radius: 50%;
 	text-align: center;
-	line-height: 42px;
+	line-height: 1.8em;
 	margin: 10px 15px;
 	vertical-align: middle;
 }
