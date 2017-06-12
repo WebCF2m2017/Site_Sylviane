@@ -937,15 +937,15 @@ text-align: justify;}
 		color: #ff8c00;
 	}
 	.app__main {
-		/*background: #fbf9fa;*/
-		width: 24em; /*height: 100%;*/
-		float: left;
+		width: 24em; 
+    margin:auto;
+		/*float: left;*/
     border: dashed 2px;
     border-color: #DEB887;
     border-spacing: 5px;
     border-width: 2px;
-    margin-left: 27%;
     margin-bottom: 4em;
+
 	}
 
 

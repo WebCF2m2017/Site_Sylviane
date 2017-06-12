@@ -164,6 +164,7 @@ ul.nav.navbar-nav{
    background-color: #dfd2a9;
    color: #D1BC91;
    padding: 2em;
+
 }
 .article h1{
   text-align: center;
@@ -226,12 +227,11 @@ h1 {
 }
 
 .box{
-  width: 39em;
-  padding: 2em;
-  margin: 2em;
-  color: white;
+    padding: 1em;
+    margin: 1em;
+    color: white;
     border: 2px solid transparent;
-text-align: justify;
+    text-align: justify;
     -moz-border-image: -moz-linear-gradient(top, #AA6B29 0%, #DAA520 100%);
     -webkit-border-image: -webkit-linear-gradient(top, #AA6B29 0%, #DAA520 100%);
     border-image: linear-gradient(to bottom, #AA6B29 0%, #DAA520 100%);
@@ -270,4 +270,8 @@ text-align: justify;
 .blue:hover {
   background-color: #AA6B29;
   color: #fff
+}
+.caldendar{
+   display: table;
+  margin: auto;
 }
