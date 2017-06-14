@@ -1,6 +1,7 @@
 body{background-color: #F0EBD8 !important;
  padding-top: 7.3em; 
 }
+
 .navbar.navbar-default{background-color: #F0EBD8;}
 ul.nav.navbar-nav{	background-color: #F0EBD8 !important;
 	border-bottom: dashed;
@@ -80,14 +81,25 @@ ul.nav.navbar-nav{
 }
 }
 
-
+.presentation{
+  margin-left: 2em;
+  margin-bottom: 4em;
+}
 
 .titrepresentation{
   color: #59544E;
+  text-align: center;
+  font-size: 3em;
+  padding-bottom: 1em;
 }
-
+.h2{
+  color: #59544E;
+  text-align: center;
+  font-size: 3em;
+  padding-bottom: 1em;
+}
 .liresuite{
-  color: blue;
+  color: #AA6B29;
 }
 
 /*.carousel-caption {
@@ -149,8 +161,16 @@ ul.nav.navbar-nav{
  
 }
 .article{
-   background-color: #241B16;
+   background-color: #dfd2a9;
    color: #D1BC91;
+   padding: 2em;
+
+}
+.article h1{
+  text-align: center;
+  font-size: 3em;
+  padding-bottom: 1em;
+  color: #59544E;
 }
 .article h2{
   color: #CDA545;
@@ -189,4 +209,69 @@ h1 {
 }
 .commentaire {
   font-style:italic;
+}
+
+.contactfooter{
+  margin-left: 7em !important;
+  font-size: 1.5em;
+}
+.footer-center{
+  width: 30em;
+  margin-left: -5em;
+}
+.footer-links{
+  margin-top: 0px !important;
+}
+.row {
+  margin-right: 0px !important;
+}
+
+.box{
+    padding: 1em;
+    margin: 1em;
+    color: white;
+    border: 2px solid transparent;
+    text-align: justify;
+    -moz-border-image: -moz-linear-gradient(top, #AA6B29 0%, #DAA520 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, #AA6B29 0%, #DAA520 100%);
+    border-image: linear-gradient(to bottom, #AA6B29 0%, #DAA520 100%);
+
+    border-image-slice: 1;
+  }
+  .box:hover{
+      -moz-border-image: -moz-linear-gradient(bottom,  #AA6B29 0%, #DAA520 100%);
+    -webkit-border-image: -webkit-linear-gradient(bottom,  #AA6B29 0%, #DAA520 100%);
+    border-image: linear-gradient(to top,  #AA6B29 0%, #DAA520 100%);
+    border-image-slice: 1;
+  }
+
+  .btn {
+  cursor: pointer;
+  margin-left: 40%;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 14px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  cursor: pointer, auto;
+}
+.blue {
+  color: #AA6B29;
+  border: 2px #AA6B29 solid;
+}
+
+.blue:hover {
+  background-color: #AA6B29;
+  color: #fff
+}
+.caldendar{
+   display: table;
+  margin: auto;
 }
