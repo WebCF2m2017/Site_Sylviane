@@ -1,20 +1,19 @@
 <?php
 
-
 if(!strstr($_SERVER['PHP_SELF'],"index.php")){
     header("Location: ./");
 }
 
-$idadmin = (int) $_GET['idadmin'];
+
 
 $sql="SELECT a.id_article,a.titre,a.texte,a.ladate
 FROM article a
 inner join admin login
-ON admin_idadmin = $idadmin
+ON admin_idadmin = idadmin
 ORDER BY ladate DESC
 LIMIT 3
 ;";
-$recup_article = mysqli_query($db,$sql);
+$recup_article = mysqli_query($db,$sql) or die(mysqli_error($db));
 
 if(!mysqli_num_rows($recup_article)){
     $erreur = "C'est article n'existe plus";
@@ -43,18 +42,21 @@ if(!mysqli_num_rows($recup_article)){
 </head>
 <body>
 <!-- ici la vue ! --->
+<div>
+
 <?php
 if(isset($erreur)){
     echo "<h2>$erreur</h2>";
 }else{
 
     ?>
-<h2><?=$row['letitre']?></h2>
-<p><?php echo nl2br($row['letexte'])?></p>
+<h2><?=$row['titre']?></h2>
+<p><?php echo nl2br($row['texte'])?></p>
 <h4><?=$row['ladate']?>
 <hr/>
 <?php
 }
 ?>
+</div>
 </body>
 </html>
