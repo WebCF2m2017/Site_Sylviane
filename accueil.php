@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<meta charset="utf-8" />
 	<title>Sophrologie-AT-Harmony</title>
-	
+
 </head>
 <body>
 
@@ -23,13 +23,13 @@
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<!--<div class="container">-->
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
-						<span class="sr-only"></span> 
-						<span class="icon-bar"></span> 
-						<span class="icon-bar"></span> 
-						<span class="icon-bar"></span> 
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 					</button>
-					<a href="#" class="navbar-brand"><a href="#"><img class='hidden-md hidden-lg' style="width:50px; height: 50px;" src="img/logo3.png" alt="Logo"></a></a> 
+					<a href="#" class="navbar-brand"><a href="#"><img class='hidden-md hidden-lg' style="width:50px; height: 50px;" src="img/logo3.png" alt="Logo"></a></a>
 				</div>
 				<div class="collapse navbar-collapse mynavbar" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav ">
@@ -44,14 +44,14 @@
 						<!--<li><a href="#">Qui suis-je</a></li>-->
 						<li><a href="#">Section privé</a></li>
 						<li class="circle hidden-xs hidden-sm"></li>
-						<li><a href="#">Témoignage</a></li>
+						<li><a href="?article">Articles</a></li>
 						<li class="circle hidden-xs hidden-sm"></li>
 						<li><a href="#">Contact</a></li>
 					</ul>
 				</div>
-				<!-- /.navbar-collapse --> 
+				<!-- /.navbar-collapse -->
 			<!--</div>-->
-			<!-- /.container --> 
+			<!-- /.container -->
 		</nav>
 	</div>
 	<div class="row slider">
@@ -93,7 +93,7 @@
       			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
         			<span class="glyphicon glyphicon-chevron-right"></span>
       			</a>
-    		</div>	
+    		</div>
 		</section>
 	</div>
 	<div class="row">
@@ -134,7 +134,7 @@
 			<h1>Articles récents </h1>
 
 			<article class="col-md-4 col-sm-12 artcile1">
-				<div class="box">				
+				<div class="box">
 					<h2>Qu’est le stress ?</h2>
 					<p>Le stress est comme un élastique sur lequel on tire.  Aussi longtemps qu’on le relâche suffisamment, il reprend sa forme initiale et tout va bien.  Par contre, si la tension devient trop fréquente voire permanente il finit par se briser …</p>
 					<a class="btn blue">Lire la suite</a>
@@ -154,10 +154,10 @@
 					<a class="btn blue">Lire la suite</a>
 				</div>
 			</article>
-		
+
 	</div>
 		</section>
-	
+
 	<div class="container">
 	  	<div class="row">
 	    	<div class="col-md-12">
@@ -168,7 +168,7 @@
 				  		<li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
 				  		<li data-target="#quote-carousel" data-slide-to="1"></li>
 				  		<li data-target="#quote-carousel" data-slide-to="2"></li>
-					</ol>  
+					</ol>
 					<!-- Carousel Slides / Quotes -->
 					<div class="carousel-inner">
 						<!-- Quote 1 -->
@@ -197,9 +197,9 @@
 				      				<small><strong>Aenean A., Justo Cras</strong></small>
 				    			</div>
 				  			</div>
-						</div>	  
+						</div>
 					</div>
-	    		</div>                          
+	    		</div>
 			</div>
 		</div>
 	</div>
