@@ -7,7 +7,7 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
 
 $idadmin = (int) $_GET['idadmin'];
 
-$sql="SELECT a.id_article , a.titre , a.texte,a.ladate
+$sql="SELECT a.id_article,a.titre,a.texte,a.ladate
 FROM article a
 inner join admin login
 ON admin_idadmin = $idadmin
@@ -49,9 +49,9 @@ if(isset($erreur)){
 }else{
 
     ?>
-<h2><?=$ligne['letitre']?></h2>
-<p><?php echo nl2br($ligne['letexte'])?></p>
-<h4><?=$ligne['ladate']?> 
+<h2><?=$row['letitre']?></h2>
+<p><?php echo nl2br($row['letexte'])?></p>
+<h4><?=$row['ladate']?>
 <hr/>
 <?php
 }
