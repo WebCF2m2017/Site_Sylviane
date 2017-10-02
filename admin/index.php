@@ -26,10 +26,10 @@ if(!isset($_SESSION['clef_de_session'])){
                     header("Location: disconnect.php");
                     break;
                 // on veut insérer
-                case "insert_article":
+                case "insert":
                     require_once 'insert/insert_article.php';
                     break;
-                case 'insert_temoign':
+                case "insertTemoign":
                     require_once 'insert/insert_temoign.php';
                     break;
                 // on veut supprimer
@@ -37,11 +37,8 @@ if(!isset($_SESSION['clef_de_session'])){
                     require_once 'delete/delete.php';
                     break;
                 // on veut modifier
-                case "update_article":
+                case "update":
                     require_once 'update/update_article.php';
-                    break;
-                case "update_temoign":
-                    require_once 'update/update_temoign.php';
                     break;
                 case "audio":
                     require_once 'page/audio.php';
@@ -50,7 +47,7 @@ if(!isset($_SESSION['clef_de_session'])){
                     require_once 'page/article.php';
                     break;
                 case "calendrier":
-                    require_once 'calendrier/index.php';
+                    require_once 'page/evenement.php';
                     break;
                 case "temoignage":
                     require_once 'page/temoignage.php';

@@ -3,7 +3,7 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
     header("Location: ./");
 }
 
-	$recup = "SELECT a.id_article, a.titre, SUBSTRING(a.texte,1,300) AS letexte, a.ladate 
+	$recup = "SELECT a.id, a.titre, SUBSTRING(a.texte,1,300) AS letexte, a.ladate 
     FROM article a 
     INNER JOIN admin u
         ON u.idadmin = a.admin_idadmin
@@ -15,7 +15,7 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
         ORDER BY t.ladate DESC
         limit 3;
     ";
-    $image="SELECT * FROM files ORDER BY id DESC limit 3 ;";
+    $image="SELECT * FROM files WHERE type like 'image%'  ORDER BY id DESC limit 3";
 
 $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 $recup_lulu = mysqli_query($db,$lulu)or die(mysqli_error($db));
@@ -133,7 +133,7 @@ $recup_image = mysqli_query($db,$image)or die(mysqli_error($db));
 		 		<p>At Harmony vous offre un panel d’approches pour participer à votre bien-être physique, émotionnel, mental et relationnel.  Des techniques simples à mettre en place permettent de mieux vivre et d’utiliser vos potentiels de la meilleure manière. Elles peuvent se suffire à elle-même ou se combiner pour se renforcer l’une l’autre.</p>
 				<p>Les services offerts sont proposés sous forme :
 				<ul class="service">
-					<li><span class="glyphicon glyphicon-ok"></span>&nbsp; de consultations individuelles </li>
+					<li><span class="glyphicon glyphicon-ok"></span>&nbsp; de consultations individuelles, </li>
 					<li><span class="glyphicon glyphicon-ok"> </span>&nbsp; d’ateliers en groupe de différents niveaux pour la sophrologie</li>
 					<li><span class="glyphicon glyphicon-ok"> </span>&nbsp; de modules de formation</li>
 				</ul>
@@ -171,7 +171,7 @@ $recup_image = mysqli_query($db,$image)or die(mysqli_error($db));
 						<h2><?=$ligne['titre']?></h2>
 						<p><?php echo $ligne['letexte']?>...</p>
 						<div class="div">
-							<a class="btn blue">Lire la suite</a>
+							<a href="?article" class="btn blue">Lire la suite</a>
 						</div>
 					</div>
 				</article>
@@ -232,7 +232,7 @@ $recup_image = mysqli_query($db,$image)or die(mysqli_error($db));
 					<li><a href="#">Présentation</a></li>
 					<li><a href="#">Autres techniques</a></li>
 					<li><a href="#">Séction privé</a></li>
-					<li><a href="#">témoignage</a></li>
+					<li><a href="#">Témoignage</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<p class="footer-company-name">ATHarmony &copy; 2017</p>
@@ -248,7 +248,7 @@ $recup_image = mysqli_query($db,$image)or die(mysqli_error($db));
 			<div class="footer-right col-md-3">
 				<p class="footer-company-about">
 					<span>À propos de nous </span>
-						Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.Lorem ipsum dolor sit amet, consectateur adispicing elit.
+						Sylviane d’At Harmony est au service de votre sérénité et de votre bien-être à Rebecq Quenast et environs ( Tubize, Braine le château, Braine le comte, Hennuyères, Enghien, Virginal, Ittre, Soignies )
 				<div class="footer-icons">
 					<a href="#"><i class="fa fa-facebook"></i></a>
 					<a href="#"><i class="fa fa-twitter"></i></a>

@@ -101,13 +101,13 @@ if(isset($_POST['texte'])&&isset($_POST['login'])&&!empty($_POST['texte'])&&!emp
                     <li>
                         <a href="./"><i class="fa fa-fw fa-dashboard"></i> Accueil</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="?action=article"><i class="fa fa-fw fa-file"></i> Article</a>
                     </li>
                     <li>
                         <a href="?action=calendrier"><i class="fa fa-fw fa-table"></i> Calendrier</a>
                     </li>
-                    <li>
+                    <li class="active">
                          <a href="?action=temoignage"><i class="fa fa-fw fa-edit"></i> Témoignage</a>
                     </li>
                     <li>
@@ -147,7 +147,7 @@ if(isset($_POST['texte'])&&isset($_POST['login'])&&!empty($_POST['texte'])&&!emp
                                 <i class="fa fa-dashboard"></i> <a href="./">Accueil</a>
                             </li>
                              <li class="active">
-                                <i class="fa fa-fw fa-file"></i> Audio
+                                <i class="fa fa-fw fa-edit"></i> Témoignage
                             </li>
                         </ol>
                     </div>
@@ -156,11 +156,11 @@ if(isset($_POST['texte'])&&isset($_POST['login'])&&!empty($_POST['texte'])&&!emp
                  <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Bienvenue dans votre espace Article
+                            Bienvenue dans votre espace Témoignage
                         </h1>
                     </div>
         <form action="" name="onsenfout" method="POST">
-            <input type="text" class="form-control" name="login" placeholder="Auteur du témoignage" required /><br/>
+            <input type="text" class="form-control" name="login" placeholder="Vos initiale" required /><br/>
             <textarea name="texte" placeholder="Votre texte" required"></textarea><br/>
             <?php
             if(isset($erreur)){

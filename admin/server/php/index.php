@@ -58,9 +58,10 @@ class CustomUploadHandler extends UploadHandler {
         parent::set_additional_file_properties($file);
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         	$sql = 'SELECT `id`, `type`, `title`, `description`, `url` FROM `'
-        		.$this->options['db_table'].'` WHERE `name`=?';
+        		.$this->options['db_table'].'` WHERE `name`= ?';
         	$query = $this->db->prepare($sql);
- 	        $query->bind_param('s', $file->name);
+ 	        $query->bind_param("s", $file->name);
+ 	       // $query->bind_param("s", $file->type);
 	        $query->execute();
 	        $query->bind_result(
 	        	$id,

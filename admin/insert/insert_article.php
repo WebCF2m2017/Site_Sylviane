@@ -148,7 +148,7 @@ if(isset($_POST['titre'])&&isset($_POST['texte'])&&isset($_POST['url'])&&!empty(
                                 <i class="fa fa-dashboard"></i> <a href="./">Accueil</a>
                             </li>
                              <li class="active">
-                                <i class="fa fa-fw fa-file"></i> Articles
+                                <i class="fa fa-fw fa-file"></i> Audio
                             </li>
                         </ol>
                     </div>

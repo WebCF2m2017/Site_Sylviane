@@ -13,7 +13,21 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
     ";
     
 $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
+/*$requete = mysqli_query($db, "SELECT COUNT(id) AS nb FROM article;");
+$requete_assoc = mysqli_fetch_assoc($requete);
+$nb_tot = $requete_assoc['nb'];
+// calcul pour le premier argument du LIMIT
+$limit = ($pg-1)*$par_page;
 
+if($_SESSION['idrole']==1||$_SESSION['idrole']==2){
+    $complement_sql= "";
+}else{ // simple util
+    $complement_sql= "WHERE au.id = ".$_SESSION['id'];
+}
+    // récupération des articles suivant les droits
+$recup_art = mysqli_query($db,"SELECT a.id, a.letitre, SUBSTRING(a.letexte,1,300) AS letexte, a.ladate, a.auteur_id, au.lelogin FROM article a INNER JOIN auteur au ON au.id = a.auteur_id $complement_sql ORDER BY a.ladate DESC LIMIT $limit, $par_page;");
+$pagination = maPagination($nb_tot, $pg,$lulu,$par_page);
+*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -146,9 +160,20 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
         <section class="col-md-12 col-sm-12 fontstyle">
             <article class="presentation">
                 <h2 class="titrepresentation">Tout les articles</h2>
+                <!-- <?php
+            // while ($ligne = mysqli_fetch_assoc($recup_sql)){
+                ?>
+                <article class="col-md-12 col-sm-12">
+                    <div class=>                
+                        <h2><?=$ligne['titre']?></h2>
+                        <p><?php echo $ligne['texte']?></p>
+                        <p><?php echo $ligne['ladate']?></p>
+                    </div>
+                </article> -->
                 <form name="bulk_action_form" action="action.php" method="post" onsubmit="return deleteConfirm();"/>
 
-                     <a type="submit" class="btn btn-primary" href="?action=insert_temoign">Insérer <i class="glyphicon glyphicon-plus"></i></a>
+                     <a type="submit" class="btn btn-primary" href="?action=insertTemoign">Insérer <i class="glyphicon glyphicon-plus"></i></a>
+                    <a type="submit" class="btn btn-warning" onclick='sup({$ligne["id"]});' href="?action=modifier">Modifier</a>
                     <input type="submit" class="btn btn-danger" name="bulk_delete_submit" value="Delete"/>
                     <table class="bordered">
                         <thead
@@ -167,7 +192,7 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
                         ?>
                         <tr>
                             <td align="center"><input type="checkbox" name="checked_id[]" class="checkbox" value="<?php echo $ligne['id_temoign']; ?>"/></td>  
-                            <td><a href='?action=update_temoign&id=<?php echo $ligne["id_temoign"]?>'><img src='img/icon_edit.png' alt='Modifier' /></a></td>    
+                            <td><a href='?action=update&id=<?php echo $ligne["id_temoign"]?>'><img src='img/icon_edit.png' alt='Modifier' /></a></td>    
                             <td><?php echo $ligne['login']; ?></td>
                             <td><?php echo $ligne['texte']; ?></td>
                             <td><?php echo $ligne['ladate']; ?></td>

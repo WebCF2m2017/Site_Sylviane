@@ -53,7 +53,7 @@
 						
 						<li class="circle hidden-xs hidden-sm"></li>
 						<!-- <li><a class="glyphicon glyphicon-user" href="#"></a></li> -->
-						<li><a class="" href="#">S'inscrire</a></li>
+						<li><a class="" href="#">Connexion</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse --> 
@@ -65,7 +65,7 @@
 		<section class="col-md-12 col-sm-12 fontstyle">
 			<article class="presentation">
 				<h2 class="titrepresentation">Autres Techniques</h2>
-				<p><a href="">Des outils d’apprentissage intégrés</a> vous soutiennent non seulement pendant votre scolarité mais aussi tout au long de la vie en optimisant vos activités intellectuelles.  Ces outils vous permettent également d’apporter un soutien plus efficace mais également plus serein aux devoirs de vos enfants.</p>
+				<p><a href="">Des outils d’apprentissage intégrés</a>Des outils d’apprentissage intégrés vous soutiennent non seulement pendant votre scolarité mais aussi tout au long de la vie en optimisant vos activités intellectuelles.  Ces outils vous permettent également d’apporter un soutien plus efficace mais également plus serein aux devoirs de vos enfants.</p>
 				<ul>
 					<li>L’approche par la gestion mentale permet de mieux connaître sa manière privilégiée de fonctionner et d’en utiliser toute la puissance mais aussi de la compléter par un éventail de stratégies complémentaires.
 					Attention, mémorisation, compréhension et réflexion deviendront plus efficace</li>
@@ -76,7 +76,7 @@ J’identifie mes dominances pour mieux les utiliser</li>
 					<li>Des techniques pour gérer le stress et conserver ses moyens</li>
 				</ul>
 				<p>Une approche de la <a href="">communication par la méthode Gordon</a>, vous aide à améliorer vos relations aux autres tant dans la sphère familiale, intime, amicale que professionnelle. 
-				Identifier nos besoins les exprimer sans agresser son interlocuteur, pouvoir l’écouter vraiment et entendre ses besoins, repérer les comportements qui nous paraissent inacceptables et être capable d’y réagir, éviter les obstacles à la communication, résoudre les conflits selon le principe du gagnant-gagnant tels sont quelques objectifs de la méthode.
+				Identifier nos besoins les exprimer sans agresser son interlocuteur, pouvoir l’écouter vraiment et entendre ses besoins, repérer les comportements qui nous paraissent inacceptables et être capable d’y réagir, éviter les obstcles à la communication, résoudre les conflits selon le principe du gagnant-gagnant tels sont quelques objectifs de la méthode.
 				Elle est également très efficace dans la relation parents-enfants.
 				</p>
 				<p>Les <a href="">huiles essentielles et fleurs de Bach</a> par leurs actions sur notre sphère émotionnelle peuvent renforcer les bienfaits de la sophrologie. 
@@ -101,7 +101,7 @@ J’identifie mes dominances pour mieux les utiliser</li>
 					<li><a href="#">Présentation</a></li>
 					<li><a href="#">Autres techniques</a></li>
 					<li><a href="#">Séction privé</a></li>
-					<li><a href="#">témoignage</a></li>
+					<li><a href="#">Témoignage</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<p class="footer-company-name">ATHarmony &copy; 2017</p>
@@ -117,7 +117,7 @@ J’identifie mes dominances pour mieux les utiliser</li>
 			<div class="footer-right col-md-3">
 				<p class="footer-company-about">
 					<span>À propos de nous </span>
-						Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+						Sylviane d’At Harmony est au service de votre sérénité et de votre bien-être à Rebecq Quenast et environs ( Tubize, Braine le château, Braine le comte, Hennuyères, Enghien, Virginal, Ittre, Soignies )
 				</p>
 				<div class="footer-icons">
 					<a href="#"><i class="fa fa-facebook"></i></a>

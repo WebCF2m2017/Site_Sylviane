@@ -53,7 +53,7 @@
 						
 						<li class="circle hidden-xs hidden-sm"></li>
 						<!-- <li><a class="glyphicon glyphicon-user" href="#"></a></li> -->
-						<li><a class="" href="#">S'inscrire</a></li>
+						<li><a class="" href="#">Connexion</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse --> 
@@ -114,10 +114,10 @@
 
 				<p>La sophrologie est une approche psychocorporelle du mieux-être.  Différentes étapes vont se succéder lors d’une séance afin de travailler la globalité de votre être ;</p>
 				<p>Un échange sur les objectifs recherchés et le contenu de la séance.  A partir de la deuxième séance, un retour sur la séance précédente et les ressentis dans la vie quotidienne.</p>
-				<p>Des exercices de respiration et des mouvements vont induire un premier niveau de détente.</p>
-				<p>Des techniques spécifiques vont vous aider à approfondir la détente et à prendre conscience des sensations envoyées par votre corps.</p>
-				<p>Vient ensuite le moment où dans un état de détente profonde, une visualisation vous est proposée afin de vous permettre de poser un regard différent sur vos préoccupations qu’elles soient physiques, émotionnelles ou mentales et d’ainsi y apporter des solutions nouvelles.</p>
-				<p>Pour terminer, tout en douceur vous revenez à votre état de vigilance habituel pour reprendre le fil de vos activités mais vous serez enrichi de nouvelles capacités pour faire face aux évènements.</p>
+				<p>Des exercices de respiration des mouvements vont induire un premier niveau de détente.</p>
+				<p>Des techniques spécifiques vont vous aider à approfondir la détente et à prendre conscience des sensations envoyée par votre corps.</p>
+				<p>Vient ensuite le moment où dans un état de détente profonde, une visualisation vous est proposée afin de vous permettre de poser un regard différent sur vos préoccupations qu’elles soient physiques, émotionnelles ou mentales et d’ainsi d’y apporter des solutions nouvelles.</p>
+				<p>Pour terminer, tout en douceur vous revenez à votre état de vigilance habituel pour reprendre le fil habituel de vos activités mais vous serez enrichi de nouvelles capacités pour faire face aux évènements.</p>
 				<p>Une description des ressentis de la séance pour une meilleure intégration des apports du travail effectué.</p>
 
 				<div class="soustitre">
@@ -130,7 +130,7 @@
 				<h4 class='h4'>Les ateliers débutants </h4>
 
 				<p>Je vous propose un atelier de 2x4 séances durant lesquelles vous découvrirez la technique qui vous permettra de faire face aux situations de stress qui se présentent dans votre vie quotidienne personnelle et/ou professionnelle.
-				Chaque séance commence par des activités de prise de conscience du corps grâce aux mouvements doux de la relaxation dynamique et se poursuit par une visualisation guidée par ma voix.</p>
+				Chaque séance commence par des activités de prise de conscience du corps grâce aux mouvements doux de la relaxation dynamique et se poursuit par une visualisation guidée par ma voix</p>
 				
 				<h5 class='h5'>L’atelier découverte niveau 1 : 4 séances de prise en main </h5>
 
@@ -172,7 +172,7 @@
 				<div class="soustitre">
 					<h3 class="toto">Les consultations individuelles – des contenus de séances personnalisés</h3>
 					<p>Lors de la première rencontre, afin d’orienter et de personnaliser vos séances, nous examinerons ensemble votre ou vos objectif(s).</p>
-					<p>Déroulement d’une séance (ici faire un lien vers le paragraphe au-dessus).</p>
+					<p>Déroulement d’une séance (ici faire un lien vers le paragraphe au-dessus)</p>
 					<p>Les visualisations seront adaptées à l’objectif et l’échange de fin de séance renforcera les prises de consciences apparues au cours de la séance.</p>
 					<p>Un plan d’action à mettre en place jusqu’à la séance suivante sera établi en fin de séance.</p >
 				</div>
@@ -192,7 +192,7 @@
 					<li><a href="#">Présentation</a></li>
 					<li><a href="#">Autres techniques</a></li>
 					<li><a href="#">Séction privé</a></li>
-					<li><a href="#">témoignage</a></li>
+					<li><a href="#">TSémoignage</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<p class="footer-company-name">ATHarmony &copy; 2017</p>
@@ -208,7 +208,7 @@
 			<div class="footer-right col-md-3">
 				<p class="footer-company-about">
 					<span>À propos de nous </span>
-						Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+						Sylviane d’At Harmony est au service de votre sérénité et de votre bien-être à Rebecq Quenast et environs ( Tubize, Braine le château, Braine le comte, Hennuyères, Enghien, Virginal, Ittre, Soignies )
 				</p>
 				<div class="footer-icons">
 					<a href="#"><i class="fa fa-facebook"></i></a>

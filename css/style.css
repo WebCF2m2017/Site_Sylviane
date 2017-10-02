@@ -1,5 +1,5 @@
 body{background-color: #F0EBD8 !important;
- padding-top: 7.3em; 
+ padding-top: 7em; 
 }
 
 .navbar.navbar-default{background-color: #F0EBD8;}
@@ -19,12 +19,12 @@ div.navbar-header{
 .navbar-nav > li > a{color: #DEB887 !important;}
 .navbar-nav > li > a:hover{color: #3F1D0B !important;}
 .mynavbar {
-	font-size: 1.85em;
+	font-size: 1.850em;
 	text-align:center;
 	font-family: 'Dancing Script', cursive;
 }
 .roro{
-  font-size: 1.85em;
+  font-size: 1.963em;
   text-align:center;
   font-family: 'Dancing Script', cursive;
   color: #DEB887 !important;
@@ -456,7 +456,7 @@ ul.nav.navbar-nav{
 .view img {
     /*display: block;*/
     width: 400px;
-    height: 250px;
+    max-height: 250px;
     position: relative;
 }
 .view .mask h2 {
@@ -525,8 +525,8 @@ ul.nav.navbar-nav{
     transition-delay: 0.2s;
 }
 
-/*.bibi{
+.bibi{
   width: 1280px;
   margin-right: auto;
   margin-left: auto;
-}*/
+}

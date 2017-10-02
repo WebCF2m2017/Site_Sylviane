@@ -10,23 +10,24 @@ if (!isset($_GET['id']) || !ctype_digit($_GET['id'])) {
 }
 
 // si le formulaire est envoyé
-if (isset($_POST['id']) && isset($_POST['titre']) && isset($_POST['texte'])) {
+if (isset($_POST['id']) && isset($_POST['titre']) && isset($_POST['texte']) && isset($_POST['url'])) {
     // mise en variable locale
     $letitre = htmlspecialchars(strip_tags(trim($_POST['titre'])), ENT_QUOTES);
     $letexte = htmlspecialchars(strip_tags(trim($_POST['texte'])), ENT_QUOTES);
+    $url = htmlspecialchars(strip_tags(trim($_POST['url'])), ENT_QUOTES);
     // si l'id est un format non valide (tentative d'attaque), il vaudra 0
     $idarticle = (int) $_POST['id'];
     //var_dump($_POST['auteur_id'],$auteur_id);
     // vérification de validité des champs (ils envoient tous == true)
-    if ($letitre && $letexte && $idarticle) {
+    if ($letitre && $letexte && $url && $idarticle) {
         // si on est utilisateur
             if ($auteur_id == $_SESSION['id'] && $idarticle == $_GET['id']) {
-                $sql_update = "UPDATE article SET titre='$letitre',texte='$letexte' WHERE id_article=$idarticle;";
+                $sql_update = "UPDATE article SET titre='$letitre',texte='$letexte',url='$url' WHERE id=$idarticle;";
             } else {
                 $erreur = "Manipulation foirée!";
             }
         } else {
-            $sql_update = "UPDATE article SET titre='$letitre',texte='$letexte' WHERE id_article=$idarticle;";
+            $sql_update = "UPDATE article SET titre='$letitre',texte='$letexte',url='$url' WHERE id=$idarticle;";
         }
         // update
         $on_update = mysqli_query($db, $sql_update);
@@ -37,9 +38,9 @@ if (isset($_POST['id']) && isset($_POST['titre']) && isset($_POST['texte'])) {
     // on récupère l'id de l'article et on le transforme en int
     $idarticle = (int) $_GET['id'];
     // requête pour remplir les champs avec l'article
-    $sql_recup = "SELECT a.id_article, a.titre, a.texte 
+    $sql_recup = "SELECT a.id, a.titre, a.texte,a.url 
         FROM article a 
-        WHERE a.id_article=$idarticle";
+        WHERE a.id=$idarticle";
     // récupération de l'article
     $recup_article = mysqli_query($db, $sql_recup);
     // si on a un article
@@ -75,7 +76,7 @@ if (isset($_POST['id']) && isset($_POST['titre']) && isset($_POST['texte'])) {
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -83,7 +84,7 @@ if (isset($_POST['id']) && isset($_POST['titre']) && isset($_POST['texte'])) {
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="js/jquery.js"></script>
-    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=85otwsgosvfj7clfojsgx40c18no4slc558zox9mljbjld7o"></script>
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
         <script>tinymce.init({
       selector: 'textarea',
       height: 500,
@@ -202,17 +203,19 @@ if (isset($_POST['id']) && isset($_POST['titre']) && isset($_POST['texte'])) {
                     </div>
                 </div>
 
-               <!-- UP_DATE D'ARTICLE -->
+               <!-- INSERTION D'ARTICLE -->
              
               
                <div class="row">
         <section class="col-md-12 col-sm-12 fontstyle">
             <article class="presentation">
-                <form action="" method="post">
+                <form action="" name="onsenfout" method="post">
                     <h3>Titre de l'article</h3>
-                    <input type="text" name="letitre" placeholder="Votre titre" value="<?= $ligne['titre'] ?>" required /><br/><br/>
-                    <textarea style="width: 100%;" name="content"><br /> <?= $ligne['texte'] ?> </textarea>
-                    <input name="send" type="submit" value="Envoyer" />
+                    <input style="width: 70vw;" type="text" name="titre" placeholder="Votre titre" value="<?= $ligne['titre'] ?>" required /><br/><br/>
+                    <h3>URL de l'image</h3>
+                    <input style="width: 70vw;" type="text" name="url" placeholder="Votre titre" value="<?= $ligne['url'] ?>" required /><br/><br/>
+                    <textarea style="width: 100%;" name="texte"><br /> <?php echo $ligne['texte']; ?> </textarea>
+                    <input name="send" type="submit" value="Modifier" />
                 </form>
             </article>
            <style>

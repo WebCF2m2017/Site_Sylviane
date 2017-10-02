@@ -50,5 +50,5 @@ elseif(isset($_GET['formation'])){
     require 'page/formation.php';
 }elseif(ctype_digit($_GET['articleseul'])){
     $id = (int) $_GET['articleseul'];
-    require_once 'articleseul.php';
+    require_once 'page/articleseul.php';
 }

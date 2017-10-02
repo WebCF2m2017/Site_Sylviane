@@ -3,7 +3,7 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
     header("Location: ./");
 }
 
-	$recup = "SELECT a.id_article, a.titre, SUBSTRING(a.texte,1,200) AS letexte,a.url,a.ladate 
+	$recup = "SELECT a.id, a.titre, SUBSTRING(a.texte,1,200) AS letexte,a.url,a.ladate 
     FROM article a 
     INNER JOIN admin u
         ON u.idadmin = a.admin_idadmin
@@ -69,7 +69,7 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 						
 						<li class="circle hidden-xs hidden-sm"></li>
 						<!-- <li><a class="glyphicon glyphicon-user" href="#"></a></li> -->
-						<li><a class="" href="#">S'inscrire</a></li>
+						<li><a class="" href="#">Connexion</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse --> 
@@ -91,7 +91,7 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 							    <img src="<?=$ligne['url']?>"> 
 							     	<div class="mask">
 								    	 <h2><?=$ligne['titre']?></h2>
-								         		<a href="?articleseul=<?=$ligne['id_article']?>" class="info">Lire la suite</a>
+								         		<a href="?articleseul=<?=$ligne['id']?>" class="info">Lire la suite</a>
 							    	</div>
 							</div>
 					</div>
@@ -116,7 +116,7 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 					<li><a href="#">Présentation</a></li>
 					<li><a href="#">Autres techniques</a></li>
 					<li><a href="#">Séction privé</a></li>
-					<li><a href="#">témoignage</a></li>
+					<li><a href="#">Témoignage</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<p class="footer-company-name">ATHarmony &copy; 2017</p>
@@ -132,7 +132,7 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 			<div class="footer-right col-md-3">
 				<p class="footer-company-about">
 					<span>À propos de nous </span>
-						Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+						Sylviane d’At Harmony est au service de votre sérénité et de votre bien-être à Rebecq Quenast et environs ( Tubize, Braine le château, Braine le comte, Hennuyères, Enghien, Virginal, Ittre, Soignies )
 				</p>
 				<div class="footer-icons">
 					<a href="#"><i class="fa fa-facebook"></i></a>

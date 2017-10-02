@@ -4,29 +4,30 @@ if (!strstr($_SERVER['PHP_SELF'], "index.php")) {
     exit();
 }
 // on vérifie la variable $_GET id
-if (!isset($_GET['id_temoign']) || !ctype_digit($_GET['id_temoign'])) {
+if (!isset($_GET['id']) || !ctype_digit($_GET['id'])) {
     header("Location: ./");
     exit();
 }
 
 // si le formulaire est envoyé
-if (isset($_POST['id_temoign']) && isset($_POST['login']) && isset($_POST['texte'])) {
+if (isset($_POST['id']) && isset($_POST['titre']) && isset($_POST['texte']) && isset($_POST['texte'])) {
     // mise en variable locale
-    $auteur = htmlspecialchars(strip_tags(trim($_POST['login'])), ENT_QUOTES);
+    $letitre = htmlspecialchars(strip_tags(trim($_POST['titre'])), ENT_QUOTES);
     $letexte = htmlspecialchars(strip_tags(trim($_POST['texte'])), ENT_QUOTES);
+    $url = htmlspecialchars(strip_tags(trim($_POST['url'])), ENT_QUOTES);
     // si l'id est un format non valide (tentative d'attaque), il vaudra 0
-    $idtemoign = (int) $_POST['id_temoign'];
+    $idarticle = (int) $_POST['id'];
     //var_dump($_POST['auteur_id'],$auteur_id);
     // vérification de validité des champs (ils envoient tous == true)
-    if ($auteur && $letexte && $idtemoign) {
+    if ($letitre && $letexte && $url && $idarticle) {
         // si on est utilisateur
-            if ($auteur_id == $_SESSION['id_temoign'] && $idarticle == $_GET['id_temoign']) {
-                $sql_update = "UPDATE temoignage SET login='$auteur',texte='$letexte' WHERE id_temoign=$idtemoign;";
+            if ($auteur_id == $_SESSION['id'] && $idarticle == $_GET['id']) {
+                $sql_update = "UPDATE article SET titre='$letitre',texte='$letexte',url='$url' WHERE id_article=$idarticle;";
             } else {
                 $erreur = "Manipulation foirée!";
             }
         } else {
-            $sql_update = "UPDATE temoignage SET login='$auteur',texte='$letexte'  WHERE id_temoign=$idtemoign;";
+            $sql_update = "UPDATE article SET titre='$letitre',texte='$letexte',url='$url' WHERE id_article=$idarticle;";
         }
         // update
         $on_update = mysqli_query($db, $sql_update);
@@ -35,11 +36,11 @@ if (isset($_POST['id_temoign']) && isset($_POST['login']) && isset($_POST['texte
 // on arrive sur le formulaire    
 } else {
     // on récupère l'id de l'article et on le transforme en int
-    $idtemoign = (int) $_GET['idtemoign'];
+    $idarticle = (int) $_GET['id'];
     // requête pour remplir les champs avec l'article
-    $sql_recup = "SELECT t.id_temoign, t.titre, t.login 
-        FROM temoignage t 
-        WHERE t.id_temoign=$idarticle";
+    $sql_recup = "SELECT a.id_article, a.titre, a.texte,a.url 
+        FROM article a 
+        WHERE a.id_article=$idarticle";
     // récupération de l'article
     $recup_article = mysqli_query($db, $sql_recup);
     // si on a un article
@@ -188,7 +189,7 @@ if (isset($_POST['id_temoign']) && isset($_POST['login']) && isset($_POST['texte
                                 <i class="fa fa-dashboard"></i> <a href="./">Accueil</a>
                             </li>
                              <li class="active">
-                                <i class="fa fa-fw fa-file"></i> Article
+                                <i class="fa fa-fw fa-file"></i> Témoignage
                             </li>
                         </ol>
                     </div>
@@ -197,7 +198,7 @@ if (isset($_POST['id_temoign']) && isset($_POST['login']) && isset($_POST['texte
                  <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Bienvenue dans votre espace Article
+                            Bienvenue dans votre espace Témoignage
                         </h1>
                     </div>
                 </div>
@@ -208,9 +209,10 @@ if (isset($_POST['id_temoign']) && isset($_POST['login']) && isset($_POST['texte
                <div class="row">
         <section class="col-md-12 col-sm-12 fontstyle">
             <article class="presentation">
-                <form action="update" method="post">
+                <form action="" name="onsenfout" method="post">
                     <h3>Titre de l'article</h3>
-                    <input type="text" name="letitre" placeholder="Votre titre" value="<?= $ligne['login'] ?>" required /><br/><br/>
+                    <input type="text" name="letitre" placeholder="Votre titre" value="<?= $ligne['titre'] ?>" required /><br/><br/>
+                    <input type="text" name="letitre" placeholder="Votre titre" value="<?= $ligne['url'] ?>" required /><br/><br/>
                     <textarea style="width: 100%;" name="content"><br /> <?= $ligne['texte'] ?> </textarea>
                     <input name="send" type="submit" value="Envoyer" />
                 </form>

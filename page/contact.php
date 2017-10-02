@@ -53,7 +53,7 @@
 						
 						<li class="circle hidden-xs hidden-sm"></li>
 						<!-- <li><a class="glyphicon glyphicon-user" href="#"></a></li> -->
-						<li><a class="" href="#">S'inscrire</a></li>
+						<li><a class="" href="#">Connexion</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse --> 
@@ -140,16 +140,15 @@ hr{
 	</style>
 
 	<div class="row">
-		<section class="col-md-12 col-sm-12 fontstyle">
+		<section class="col-md-8 col-md-offset-2 col-sm-12 fontstyle">
 			<article class="presentation">
 				<h2 class="titrepresentation">Qui suis-je?</h2>
 				<img class='photoprofile' src="img/sylviane.png">
-				<p>Licenciée en science psychologiques et pédagogiques (ULB – 1985), j’ai souhaité continuer à développer mes compétences durant toute ma carrière de référent pédagogique dans un centre de formation pour adultes.  Au fil des découvertes a germé le projet d’un atelier pédagogique. Son but est de donner des outils pour faciliter l’apprentissage tant sur le plan cognitif (comment mieux utiliser ses ressources) qu’émotionnel (ne plus perdre ses moyens à cause du stress)
-
-				C’est ainsi que je me suis formée à la gestion du stress et des émotions, aux techniques de développement personnel, de bien-être et de soutien pédagogique.  
-				La sophrologie, la réflexologie plantaire, les techniques de bien-être par les huiles essentielles, les fleurs de Bach, l’approche Gordon de la communication, l’analyse transactionnelle, le brain gym, la gestion mentale font partie des approches qui m’ont séduite.
-				Devenue sophrologue, j’ai décidé d’élargir mes activités et proposer de partager mes expériences positives en cabinet privé, c’est ainsi qu’est né At Harmony.
-				Forte d’une pratique dans mes activités salariées et privées, j’ambitionne de participer au mieux-être de qui voudra bien m’accorder sa confiance.</p>
+				<p>La sophrologie par son approche psychocorporelle vise à réharmoniser notre corps, nos émotions et notre mental.  Elle permet de retrouver l’équilibre si précieux pour notre bien-être. </p>
+				<p>Les huiles essentielles et fleurs de Bach par leurs actions sur notre sphère émotionnelle peuvent renforcer les bienfaits de la sophrologie.</p>
+				<p>Des outils d’apprentissage intégrés vous soutiennent non seulement pendant votre scolarité mais aussi tout au long de la vie en optimisant vos activités intellectuelles et vous permettent également d’apporter un soutien plus efficace mais également plus serein aux devoirs de vos enfants </p>
+				<p>Une approche de la communication par la méthode Gordon, vous aide à améliorer vos relations aux autres tant dans la sphère familiale, intime, amicale que professionnelle.</p>
+				<p>La réflexologie plantaire par sa vision globale du corps permet d’augmenter votre vitalité, votre énergie, favorise l’élimination des toxines, renforce votre immunité.  Par son action à distance, elle permet de participer à un meilleur fonctionnement des organes de l’ensemble du corps</p>
 			</article>
 		</section>
 
@@ -209,7 +208,7 @@ hr{
 					<li><a href="#">Présentation</a></li>
 					<li><a href="#">Autres techniques</a></li>
 					<li><a href="#">Séction privé</a></li>
-					<li><a href="#">témoignage</a></li>
+					<li><a href="#">Témoignage</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<p class="footer-company-name">ATHarmony &copy; 2017</p>
@@ -219,13 +218,13 @@ hr{
 					<li class="contactfooter">Contact </li>
 					<li><i class="fa fa-map-marker"></i>Avenue du Parc 89,1060 Bruxelles</li>
 					<li><i class="fa fa-phone"></i>02/539.03.60</li>
-					<li><i class="fa fa-envelope"></i><a href="mailto:sylviane.mol.cf@gmail.com">sylviane.mol.cf@gmail.com</a></li>
+					<li><i class="fa fa-envelope"></i><a href="mailto:houssain_khalifa@hotmail.com">sylviane.mol.cf@gmail.com</a></li>
 				</ul>
 			</div>
 			<div class="footer-right col-md-3">
 				<p class="footer-company-about">
 					<span>À propos de nous </span>
-						Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+						Sylviane d’At Harmony est au service de votre sérénité et de votre bien-être à Rebecq Quenast et environs ( Tubize, Braine le château, Braine le comte, Hennuyères, Enghien, Virginal, Ittre, Soignies )
 				</p>
 				<div class="footer-icons">
 					<a href="#"><i class="fa fa-facebook"></i></a>
