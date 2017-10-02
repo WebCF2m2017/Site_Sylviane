@@ -3,13 +3,13 @@ if(isset($_POST['clogin'])&&isset($_POST['cmdp'])){
     $login = htmlspecialchars(strip_tags(trim($_POST['clogin'])),ENT_QUOTES);
     $mdp = trim($_POST['cmdp']);
     // encodage en sha256 pour vérifier la concordance dans la db
-    $mdp = sha256($mdp);
+    
     // si login vaut (non strictement) true (pas de chaîne vide ni de 0, ni false)
     if($login){
         // requête pour vérifier si l'utilisateur existe et peut se connecter
-        $sql="SELECT a.id, a.lelogin, a.lemail 
-            FROM auteur a 
-            WHERE a.lelogin = '$login' AND a.lemdp = '$mdp';
+        $sql="SELECT a.idadmin, a.login, a.mail 
+            FROM admin a 
+            WHERE a.login = '$login' AND a.password = '$mdp';
             ";
         $recup_util = mysqli_query($db, $sql)or die(mysqli_error($db));
         // si on récupère un résultat
@@ -47,7 +47,7 @@ if(isset($_POST['clogin'])&&isset($_POST['cmdp'])){
             <input type="password" name="cmdp" placeholder="Votre mot de passe" required /><br/>
             <input type="submit" value="Se connecter"/>
         </form>
-        <h2><a href='/perso'>Retour à l'accueil du site</a></h2>
+        <h2><a href='../'>Retour à l'accueil du site</a></h2>
         <?php
         if(isset($erreur)){ echo "<h3>$erreur</h3>";}
         ?>
