@@ -26,17 +26,47 @@ if(!isset($_SESSION['clef_de_session'])){
                     header("Location: disconnect.php");
                     break;
                 // on veut insérer
-                case "insert":
-                    require_once 'insert.php';
+                case "insert_article":
+                    require_once 'insert/insert_article.php';
+                    break;
+                case 'insert_temoign':
+                    require_once 'insert/insert_temoign.php';
                     break;
                 // on veut supprimer
                 case "delete":
-                    require_once 'delete.php';
+                    require_once 'delete/delete.php';
                     break;
                 // on veut modifier
-                case "update":
-                    require_once 'update.php';
+                case "update_article":
+                    require_once 'update/update_article.php';
                     break;
+                case "update_temoign":
+                    require_once 'update/update_temoign.php';
+                    break;
+                case "audio":
+                    require_once 'page/audio.php';
+                    break;
+                case "article":
+                    require_once 'page/article.php';
+                    break;
+                case "calendrier":
+                    require_once 'calendrier/index.php';
+                    break;
+                case "temoignage":
+                    require_once 'page/temoignage.php';
+                    break;
+                case "utilisateur":
+                    require_once 'page/utilisateur.php';
+                    break;
+                case "carousel":
+                    require_once 'page/carousel.php';
+                    break;
+                case "formation":
+                    require_once 'page/formation.php';
+                    break;                    
+                case "newsletter":
+                    require_once 'page/newsletter.php';
+                    break;       
                 default :
                     header("Location: ./");
             }
@@ -48,7 +78,7 @@ if(!isset($_SESSION['clef_de_session'])){
     }else{
         $pg=1;
     }
-            require_once 'accueil_admin.php';
+            require_once 'page/accueil_admin.php';
         }
     }else{
         header("Location: disconnect.php");
