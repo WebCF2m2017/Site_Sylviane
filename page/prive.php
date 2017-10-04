@@ -3,6 +3,9 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
     header("Location: ./");
 }
 
+<<<<<<< HEAD
+$recup="SELECT * FROM files WHERE type like 'audio%'  ORDER BY id DESC limit 3";
+=======
 	$recup = "SELECT a.id, a.titre, a.texte, a.ladate 
     FROM article a 
     INNER JOIN admin u
@@ -10,6 +13,7 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
         ORDER BY a.ladate DESC
         ;
     ";
+>>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
     
 $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 
@@ -77,6 +81,50 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 			<!-- /.container --> 
 		</nav>
 	</div>
+<<<<<<< HEAD
+		<div class="row">
+		<section class="col-md-12 col-sm-12 fontstyle">
+			<article class="presentation">
+				<h2 class="titrepresentation">Audio</h2>
+				<div class="wrapper">
+
+			        <table id="acrylic">
+			        
+			            <thead>
+			                <tr>
+			                    <th>Titre</th>
+			                    <th>Description</th>
+			                    <th>Audio</th>
+			                </tr>
+			            </thead>
+			            	<?php
+            while ($ligne = mysqli_fetch_assoc($recup_sql)){
+                ?>
+			            <tbody>
+			                <tr>
+
+			                    <td><?=$ligne['title']?></td>
+			                    <td><?=$ligne['description']?></td>
+			                    <td>    
+			                        <audio controls>
+			                           <?=$ligne['url']?>
+			                        </audio>
+			                    </td>
+			                </tr>
+			                
+			            </tbody>
+			                    <?php
+            }
+            ?>
+			        </table>
+			
+			    </div>
+				
+			</article>
+		</section>
+
+	</div>
+=======
 	<div class="row">
 		<section class="col-md-12 col-sm-12 fontstyle">
 			<article class="presentation">
@@ -97,6 +145,7 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 		</section>
 
 	</div>	
+>>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
 	<footer class="footer-distributed">
 		<div class="container" style="max-width: 1130px !important;">
 			<img class="col-md-3" src="img/logo1.png" style="width:100px;height:100px;padding:0px;">

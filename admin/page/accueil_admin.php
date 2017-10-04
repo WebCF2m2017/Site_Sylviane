@@ -91,6 +91,13 @@ $pagination = maPagination($nb_tot, $pg,$lulu,$par_page);
                         <i class="fa fa-fw fa-file"></i> Article</a>
                     </li>
                     <li>
+<<<<<<< HEAD
+                        <a href="?action=insertImage" data-toggle="collapse" data-target="#article">
+                        <i class="fa fa-fw fa-file"></i>Images Article</a>
+                    </li>
+                    <li>
+=======
+>>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
                         <a href="?action=calendrier"><i class="fa fa-fw fa-table"></i> Calendrier</a>
                     </li>
                     <li>

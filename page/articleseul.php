@@ -85,7 +85,11 @@ if(!mysqli_num_rows($recup_sql)){
 	<div class="row">
 		<section class="col-md-12 col-sm-12 fontstyle">
 			<article class="presentation">
+<<<<<<< HEAD
+				<h2 class="titrepresentation" style="font-family: 'Dancing Script', cursive; font-size: 50px !important; color: #AA6B29;">Article complet</h2>
+=======
 				<h2 class="titrepresentation">Article complet</h2>
+>>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
 				 <?php
             if(isset($erreur)){
                 echo "<h2>$erreur</h2>";

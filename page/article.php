@@ -80,7 +80,11 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 	<div class="row">
 		<section class="col-md-12 col-sm-12" >
 			<article class="presentation" id="anchor-case2"">
+<<<<<<< HEAD
+				<h2 class="titrepresentation" style="font-family: 'Dancing Script', cursive; font-size: 50px !important; color: #AA6B29;">Tous les articles</h2>
+=======
 				<h2 class="titrepresentation">Tous les articles</h2>
+>>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
 				<section class="bibi">
 				<?php
             while ($ligne = mysqli_fetch_assoc($recup_sql)){

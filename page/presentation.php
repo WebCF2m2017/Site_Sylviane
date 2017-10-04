@@ -65,7 +65,11 @@
 	<div class="row">
 		<section class="col-md-12 col-sm-12 fontstyle">
 			<article class="presentation" style="padding-bottom: 80px;">
+<<<<<<< HEAD
+				<h2 class="titrepresentation" style="font-family: 'Dancing Script', cursive; font-size: 50px !important; color: #AA6B29;">Présentation de la sophrologie</h2>
+=======
 				<h2 class="titrepresentation">Présentation de la sophrologie</h2>
+>>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
 			
 				
 				

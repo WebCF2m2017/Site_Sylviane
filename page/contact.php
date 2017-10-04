@@ -142,7 +142,11 @@ hr{
 	<div class="row">
 		<section class="col-md-8 col-md-offset-2 col-sm-12 fontstyle">
 			<article class="presentation">
+<<<<<<< HEAD
+				<h2 class="titrepresentation" style="font-family: 'Dancing Script', cursive; font-size: 50px !important; color: #AA6B29;">Qui suis-je?</h2>
+=======
 				<h2 class="titrepresentation">Qui suis-je?</h2>
+>>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
 				<img class='photoprofile' src="img/sylviane.png">
 				<p>La sophrologie par son approche psychocorporelle vise à réharmoniser notre corps, nos émotions et notre mental.  Elle permet de retrouver l’équilibre si précieux pour notre bien-être. </p>
 				<p>Les huiles essentielles et fleurs de Bach par leurs actions sur notre sphère émotionnelle peuvent renforcer les bienfaits de la sophrologie.</p>

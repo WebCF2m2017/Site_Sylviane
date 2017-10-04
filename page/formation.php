@@ -68,9 +68,15 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
 	</div>
 	<div class="row" style="padding-left: 50px;">
 		<section class="col-md-12 col-sm-12 fontstyle">
+<<<<<<< HEAD
+			<h1 style="font-family: 'Dancing Script', cursive; font-size: 50px !important; color: #AA6B29;">Gérer son temps</h1>
+			<h2 style="color: #AA6B29">3 matinées pour devenir plus efficace.</h2>
+			<h3 style="color: #009445">Programme :</h3>
+=======
 			<h1>Gérer son temps</h1>
 			<h2>3 matinées pour devenir plus efficace.</h2>
 			<h3>Programme :</h3>
+>>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
 				<ul>
 					<li>Découvrir son rapport au temps</li>
 					<li>Quelles sont mes VRAIES priorités ?</li>
@@ -81,6 +87,24 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
 					<li>S’autoriser à prendre du temps pour soi</li>
 				</ul>
 				
+<<<<<<< HEAD
+				<h3 style="color: #009445">Méthodologie</h3>
+				<p>Alternance d’exposés théoriques et d’exercices pour favoriser la découverte des différents concepts</p>
+				<p>A partir de vos propres activités vous planifiez et mettez en pratique les outils abordés.</p>
+				<p style="color: #AA6B29">Horaires : samedi matin de 9h à 12h</p>
+				<p style="color: #009445">Tarifs : 130 € pour les 3 matinées</p>
+				<p>Prochaine session : ….</p>
+
+				<h1 style="font-family: 'Dancing Script', cursive; font-size: 50px !important; color: #AA6B29;">L’école des devoirs ….    pour les parents</h1>
+				<p>J’ai pas envie, j’en ai marre, je ne comprends pas, …  en tant que parents vous avez peut-être déjà entendu cela.  Des devoirs qui pourraient être terminé en ½ heure prennent 2h.</p>
+				<p>Vous vous êtes déjà surpris à penser : mais hier il-elle connaissait sa leçon et aujourd’hui le contrôle est raté, je n’y comprends rien, que s’est-il passé ?</p>
+				<p>Et si vous pouviez découvrir des outils qui vous aiderons à mieux guider votre enfant dans sa scolarité ? </p>
+				<h3 style="color: #009445">2 formules : </h3>
+				<p>3 journées de 9h à 15h </p>
+				<p>En soirée : 8 X 2h</p>
+
+				<h3 style="color: #009445">Programme</h3>
+=======
 				<h3>Méthodologie</h3>
 				<p>Alternance d’exposés théoriques et d’exercices pour favoriser la découverte des différents concepts</p>
 				<p>A partir de vos propres activités vous planifiez et mettez en pratique les outils abordés.</p>
@@ -97,6 +121,7 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
 				<p>En soirée : 8 X 2h</p>
 
 				<h3>Programme</h3>
+>>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
 				<p>Les différents profils d’apprentissage : on est tous différents, ce qui fonctionne pour moi ne marche pas forcément pour mon enfant. </p>
 				<p>Aborder les matières en tenant compte de son profil, l’aider à utiliser en toute conscience ses ressources propres et des outils complémentaires.</p>
 				<p>A la lumière des neurosciences, comment cela se passe-t-il dans le cerveau ?</p>

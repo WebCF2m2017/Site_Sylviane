@@ -3,6 +3,13 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
     header("Location: ./");
 }
 
+<<<<<<< HEAD
+$recup = "SELECT u.id, u.login,u.mail, u.droit_groupe_id_droit, u.ladate 
+    FROM utilisateur u ORDER BY u.droit_groupe_id_droit ASC;";
+    
+$recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
+
+=======
 /*$requete = mysqli_query($db, "SELECT COUNT(id) AS nb FROM article;");
 $requete_assoc = mysqli_fetch_assoc($requete);
 $nb_tot = $requete_assoc['nb'];
@@ -18,6 +25,7 @@ if($_SESSION['idrole']==1||$_SESSION['idrole']==2){
 $recup_art = mysqli_query($db,"SELECT a.id, a.letitre, SUBSTRING(a.letexte,1,300) AS letexte, a.ladate, a.auteur_id, au.lelogin FROM article a INNER JOIN auteur au ON au.id = a.auteur_id $complement_sql ORDER BY a.ladate DESC LIMIT $limit, $par_page;");
 $pagination = maPagination($nb_tot, $pg,$lulu,$par_page);
 */
+>>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -146,6 +154,80 @@ $pagination = maPagination($nb_tot, $pg,$lulu,$par_page);
                     </div>
                 </div>
                
+<<<<<<< HEAD
+                  <div class="row">
+        <section class="col-md-12 col-sm-12 fontstyle">
+            <article class="presentation">
+                <h2 class="titrepresentation">Tout les utulisateurs</h2>
+                <!-- <?php
+            // while ($ligne = mysqli_fetch_assoc($recup_sql)){
+                ?>
+                <article class="col-md-12 col-sm-12">
+                    <div class=>                
+                        <h2><?=$ligne['titre']?></h2>
+                        <p><?php echo $ligne['texte']?></p>
+                        <p><?php echo $ligne['ladate']?></p>
+                    </div>
+                </article> -->
+                <form name="bulk_action_form" action="action.php" method="post" onsubmit="return deleteConfirm();"/>
+
+                     <a type="submit" class="btn btn-primary" href="?action=insert">Insérer <i class="glyphicon glyphicon-plus"></i></a>
+                    <!-- <a type="submit" class="btn btn-warning" onclick='sup({$ligne["id"]});' href="?action=update&id=">Modifier</a> -->
+                    <input type="submit" class="btn btn-danger" name="bulk_delete_submit" value="Delete"/>
+                    <table class="bordered">
+                        <thead style='margin-top: 20px !important;'>
+                        <tr>
+                            <th><input type="checkbox" name="select_all" id="select_all" value=""/></th>        
+                            <th>Modifier</th>
+                            <th>Login</th>
+                            <th>Mail</th>
+                            <th>La date</th>
+                            <th>Droit du groupe</th>
+                        </tr>
+                        </thead>
+                        <?php
+                            if(mysqli_num_rows($recup_sql) > 0){
+                                while($ligne = mysqli_fetch_assoc($recup_sql)){
+                        ?>
+                        <tr>
+                            <td align="center"><input type="checkbox" name="checked_id[]" class="checkbox" value="<?php echo $ligne['id']; ?>"/></td>  
+                            <td><a href='?action=update&id=<?php echo $ligne["id"]?>'><img src='img/icon_edit.png' alt='Modifier' /></a></td>    
+                            <td><?php echo $ligne['login']; ?></td>
+                            <td><?php echo $ligne['mail']; ?></td>
+                            <td class="urlimage"><?php echo $ligne['ladate']; ?></td>
+                            <td><?php echo $ligne['droit_groupe_id_droit']; ?></td>
+                        </tr> 
+                        <?php } }else{ ?>
+                            <tr><td colspan="5">Pas d'éléments trouvés.</td></tr> 
+                        <?php } ?>
+                    </table>
+                    
+                    <style type="text/css">
+                        td{
+                            padding: 20px;
+                          
+
+                        }
+                        th{
+                            text-align: center;
+                           
+                        }
+                        .urlimage img{
+                            width: 100px;
+                            height: 100px;
+                        }
+                    </style>
+                    
+                </form>
+            <!--    <?php
+            
+            ?>
+            </article> -->
+        </section>
+
+    </div>  
+=======
+>>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
             </div>
             <!-- /.container-fluid -->
 
