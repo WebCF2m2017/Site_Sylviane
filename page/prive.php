@@ -3,17 +3,9 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
     header("Location: ./");
 }
 
-<<<<<<< HEAD
+
 $recup="SELECT * FROM files WHERE type like 'audio%'  ORDER BY id DESC limit 3";
-=======
-	$recup = "SELECT a.id, a.titre, a.texte, a.ladate 
-    FROM article a 
-    INNER JOIN admin u
-        ON u.idadmin = a.admin_idadmin
-        ORDER BY a.ladate DESC
-        ;
-    ";
->>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
+
     
 $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 
@@ -81,7 +73,7 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 			<!-- /.container --> 
 		</nav>
 	</div>
-<<<<<<< HEAD
+
 		<div class="row">
 		<section class="col-md-12 col-sm-12 fontstyle">
 			<article class="presentation">
@@ -124,28 +116,7 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 		</section>
 
 	</div>
-=======
-	<div class="row">
-		<section class="col-md-12 col-sm-12 fontstyle">
-			<article class="presentation">
-				<h2 class="titrepresentation">Tout les articles</h2>
-				<?php
-            while ($ligne = mysqli_fetch_assoc($recup_sql)){
-                ?>
-                <article class="col-md-12 col-sm-12">
-					<div class=>				
-						<h2><?=$ligne['titre']?></h2>
-						<p><?php echo $ligne['texte']?></p>
-					</div>
-				</article>
-				<?php
-            }
-            ?>
-			</article>
-		</section>
 
-	</div>	
->>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
 	<footer class="footer-distributed">
 		<div class="container" style="max-width: 1130px !important;">
 			<img class="col-md-3" src="img/logo1.png" style="width:100px;height:100px;padding:0px;">
@@ -175,9 +146,9 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 						Sylviane d’At Harmony est au service de votre sérénité et de votre bien-être à Rebecq Quenast et environs ( Tubize, Braine le château, Braine le comte, Hennuyères, Enghien, Virginal, Ittre, Soignies )
 				</p>
 				<div class="footer-icons">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-pinterest"></i></a>
+						<a href="https://www.facebook.com/sylvianeatharmony/" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/sylsophr" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.pinterest.com/sylvianemol/" target="_blank"><i class="fa fa-pinterest"></i></a>
 					<a href="#"><i class="fa fa-envelope"></i></a>
 					<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>
 </a>

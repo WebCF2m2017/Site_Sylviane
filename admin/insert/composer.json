@@ -1,0 +1,14 @@
+{
+    "name": "webform/10-upload-img",
+    "type": "library",
+    "require": {
+        "twig/twig": "2.4.*",
+        "kraksoft/colorbox": "1.5.*"
+    },
+    "authors": [
+        {
+            "name": "michaeljpitz",
+            "email": "michaeljpitz@gmail.com"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{% extends "base.html.twig"%}
+{% block title %}Formulaire{% endblock %}
+            {% block head %}
+                <h2>Notre formulaire</h2>
+            {% endblock %}
+            {% block menu %}
+                <ul>
+
+                  <a class="btn btn-warning" style="color:white;" href='./'>Retour à l'accueil</a>
+                {% for m in menu %}
+                        <a class="btn btn-success" href='?idcateg={{m.idcateg}}'>{{m.intitule}}</a>
+                    {% endfor %}
+                </ul>
+            {% endblock %}
+            {% block content %}
+                <hr/>
+                <form enctype="multipart/form-data" action="" method="post">
+                  <input type="hidden" name="MAX_FILE_SIZE" value="100000000" />
+                  <input type="text" name="titre" placeholder="Titre" required /><br/>
+                  <textarea name="desc" required placeholder="Description"></textarea><br/>
+                  Envoyez ce fichier : <input name="limage" type="file"  required /><br/><br/>
+                  Choix des catgégories : 
+                  {% for c in menu %}
+                  {{c.intitule}} <input name="categ_idcateg[]" type="checkbox" value="{{c.idcateg}}" /> | 
+                  {% endfor %}
+                  <br/><br/>
+                  <input type="submit" value="Envoyer le fichier" />
+                </form>
+            {% endblock %}
+            {% block footer %}
+                <hr/><p>Pied de page</p>
+            {% endblock %}

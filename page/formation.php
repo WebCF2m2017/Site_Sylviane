@@ -68,15 +68,9 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
 	</div>
 	<div class="row" style="padding-left: 50px;">
 		<section class="col-md-12 col-sm-12 fontstyle">
-<<<<<<< HEAD
 			<h1 style="font-family: 'Dancing Script', cursive; font-size: 50px !important; color: #AA6B29;">Gérer son temps</h1>
 			<h2 style="color: #AA6B29">3 matinées pour devenir plus efficace.</h2>
 			<h3 style="color: #009445">Programme :</h3>
-=======
-			<h1>Gérer son temps</h1>
-			<h2>3 matinées pour devenir plus efficace.</h2>
-			<h3>Programme :</h3>
->>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
 				<ul>
 					<li>Découvrir son rapport au temps</li>
 					<li>Quelles sont mes VRAIES priorités ?</li>
@@ -86,8 +80,6 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
 					<li>Importance et urgence, où sont les priorités ?</li>
 					<li>S’autoriser à prendre du temps pour soi</li>
 				</ul>
-				
-<<<<<<< HEAD
 				<h3 style="color: #009445">Méthodologie</h3>
 				<p>Alternance d’exposés théoriques et d’exercices pour favoriser la découverte des différents concepts</p>
 				<p>A partir de vos propres activités vous planifiez et mettez en pratique les outils abordés.</p>
@@ -103,25 +95,8 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
 				<p>3 journées de 9h à 15h </p>
 				<p>En soirée : 8 X 2h</p>
 
-				<h3 style="color: #009445">Programme</h3>
-=======
-				<h3>Méthodologie</h3>
-				<p>Alternance d’exposés théoriques et d’exercices pour favoriser la découverte des différents concepts</p>
-				<p>A partir de vos propres activités vous planifiez et mettez en pratique les outils abordés.</p>
-				<p style="color: #AA6B29">Horaires : samedi matin de 9h à 12h</p>
-				<p style="color: #AC6F2D">Tarifs : 130 € pour les 3 matinées</p>
-				<p>Prochaine session : ….</p>
-
-				<h1>L’école des devoirs ….    pour les parents</h1>
-				<p>J’ai pas envie, j’en ai marre, je ne comprends pas, …  en tant que parents vous avez peut-être déjà entendu cela.  Des devoirs qui pourraient être terminé en ½ heure prennent 2h.</p>
-				<p>Vous vous êtes déjà surpris à penser : mais hier il-elle connaissait sa leçon et aujourd’hui le contrôle est raté, je n’y comprends rien, que s’est-il passé ?</p>
-				<p>Et si vous pouviez découvrir des outils qui vous aiderons à mieux guider votre enfant dans sa scolarité ? </p>
-				<h3>2 formules : </h3>
-				<p>3 journées de 9h à 15h </p>
-				<p>En soirée : 8 X 2h</p>
-
 				<h3>Programme</h3>
->>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
+
 				<p>Les différents profils d’apprentissage : on est tous différents, ce qui fonctionne pour moi ne marche pas forcément pour mon enfant. </p>
 				<p>Aborder les matières en tenant compte de son profil, l’aider à utiliser en toute conscience ses ressources propres et des outils complémentaires.</p>
 				<p>A la lumière des neurosciences, comment cela se passe-t-il dans le cerveau ?</p>
@@ -151,18 +126,17 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
 					<li><a href="#">Accueil</a></li>
 					<li><a href="#">Présentation</a></li>
 					<li><a href="#">Autres techniques</a></li>
-					<li><a href="#">Séction privé</a></li>
-					<li><a href="#">Témoignage</a></li>
+					<li><a href="#">Séction abonné</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<p class="footer-company-name">ATHarmony &copy; 2017</p>
 			</div>
 			<div class="footer-center col-md-3">
 				<ul>
-					<li class="contactfooter">Contact </li>
-					<li><i class="fa fa-map-marker"></i>Avenue du Parc 89,1060 Bruxelles</li>
-					<li><i class="fa fa-phone"></i>02/539.03.60</li>
-					<li><i class="fa fa-envelope"></i><a href="mailto:sylviane.mol.cf@gmail.com">sylviane.mol.cf@gmail.com</a></li>
+					<li class="contactfooter">Contact</li>
+					<li><i class="fa fa-map-marker"></i>Chemin de la Malpensée 20, 1430 Rebecq</li>
+					<li><i class="fa fa-phone"></i>0479/245.109</li>
+					<li><i class="fa fa-envelope"></i><a href="mailto:sylviane.mol.cf@gmail.com">sylviane.atharmony@gmail.com</a></li>
 				</ul>
 			</div>
 			<div class="footer-right col-md-3">
@@ -171,9 +145,9 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
 						Sylviane d’At Harmony est au service de votre sérénité et de votre bien-être à Rebecq Quenast et environs ( Tubize, Braine le château, Braine le comte, Hennuyères, Enghien, Virginal, Ittre, Soignies )
 				</p>
 				<div class="footer-icons">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-pinterest"></i></a>
+					<a href="https://www.facebook.com/sylvianeatharmony/" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/sylsophr" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.pinterest.com/sylvianemol/" target="_blank"><i class="fa fa-pinterest"></i></a>
 					<a href="#"><i class="fa fa-envelope"></i></a>
 					<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>
 </a>

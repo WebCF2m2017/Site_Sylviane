@@ -1,0 +1,27 @@
+{% extends "base.html.twig"%}
+{% block title %}Accueil{% endblock %}
+            {% block head %}
+                <h2>Affichage de toutes les images </h2>
+            {% endblock %}
+            {% block menu %}
+                <ul>
+                    {% for m in menu %}
+                        <a class="btn btn-success" href='?idcateg={{m.idcateg}}'>{{m.intitule}}</a>
+                    {% endfor %}
+                    {% if connect %}
+                    <a class="btn btn-primary" href='?upload'>Envoyer une image</a>
+                        {% else%}
+                    <li>{% include 'form.html.twig'%}</li>
+                    
+                    {% endif%}
+                </ul>
+            {% endblock %}
+            {% block content %}
+                <hr/>
+                {% for obj in imgt %}
+                    <a title='{{obj.titre}}' href='v/upload/resize/{{obj.nom}}' class='nosPhotos'><img src='v/upload/thumbs/{{obj.nom}}' alt='{{obj.nom}}' /></a>
+                {% endfor %}    
+            {% endblock %}
+            {% block footer %}
+                <hr/><p>Pied de page</p>
+            {% endblock %}

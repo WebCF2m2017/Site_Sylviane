@@ -142,11 +142,9 @@ hr{
 	<div class="row">
 		<section class="col-md-8 col-md-offset-2 col-sm-12 fontstyle">
 			<article class="presentation">
-<<<<<<< HEAD
+
 				<h2 class="titrepresentation" style="font-family: 'Dancing Script', cursive; font-size: 50px !important; color: #AA6B29;">Qui suis-je?</h2>
-=======
-				<h2 class="titrepresentation">Qui suis-je?</h2>
->>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
+
 				<img class='photoprofile' src="img/sylviane.png">
 				<p>La sophrologie par son approche psychocorporelle vise à réharmoniser notre corps, nos émotions et notre mental.  Elle permet de retrouver l’équilibre si précieux pour notre bien-être. </p>
 				<p>Les huiles essentielles et fleurs de Bach par leurs actions sur notre sphère émotionnelle peuvent renforcer les bienfaits de la sophrologie.</p>
@@ -198,7 +196,7 @@ hr{
 	</div>	
 
   <div class="row google-maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.2669131507228!2d4.339436015785951!3d50.826219768098134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c442f05b8141%3A0x858d181c3315381d!2sAvenue+du+Parc%2C+1060+Saint-Gilles!5e0!3m2!1sfr!2sbe!4v1497952339333" width="1200" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.3922429688782!2d4.1411126158533085!3d50.63840608168471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3b50e24b21d01%3A0x5f336e733af70f7d!2sChemin+de+la+Malpens%C3%A9e+20%2C+7090+Rebecq!5e0!3m2!1sfr!2sbe!4v1507119666442" width="1200" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 
 
@@ -211,18 +209,17 @@ hr{
 					<li><a href="#">Accueil</a></li>
 					<li><a href="#">Présentation</a></li>
 					<li><a href="#">Autres techniques</a></li>
-					<li><a href="#">Séction privé</a></li>
-					<li><a href="#">Témoignage</a></li>
+					<li><a href="#">Séction abonné</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<p class="footer-company-name">ATHarmony &copy; 2017</p>
 			</div>
 			<div class="footer-center col-md-3">
 				<ul>
-					<li class="contactfooter">Contact </li>
-					<li><i class="fa fa-map-marker"></i>Avenue du Parc 89,1060 Bruxelles</li>
-					<li><i class="fa fa-phone"></i>02/539.03.60</li>
-					<li><i class="fa fa-envelope"></i><a href="mailto:houssain_khalifa@hotmail.com">sylviane.mol.cf@gmail.com</a></li>
+					<li class="contactfooter">Contact</li>
+					<li><i class="fa fa-map-marker"></i>Chemin de la Malpensée 20, 1430 Rebecq</li>
+					<li><i class="fa fa-phone"></i>0479/245.109</li>
+					<li><i class="fa fa-envelope"></i><a href="mailto:sylviane.mol.cf@gmail.com">sylviane.atharmony@gmail.com</a></li>
 				</ul>
 			</div>
 			<div class="footer-right col-md-3">
@@ -231,9 +228,9 @@ hr{
 						Sylviane d’At Harmony est au service de votre sérénité et de votre bien-être à Rebecq Quenast et environs ( Tubize, Braine le château, Braine le comte, Hennuyères, Enghien, Virginal, Ittre, Soignies )
 				</p>
 				<div class="footer-icons">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-pinterest"></i></a>
+					<a href="https://www.facebook.com/sylvianeatharmony/" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/sylsophr" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.pinterest.com/sylvianemol/" target="_blank"><i class="fa fa-pinterest"></i></a>
 					<a href="#"><i class="fa fa-envelope"></i></a>
 					<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>
 </a>

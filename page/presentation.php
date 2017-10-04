@@ -65,13 +65,8 @@
 	<div class="row">
 		<section class="col-md-12 col-sm-12 fontstyle">
 			<article class="presentation" style="padding-bottom: 80px;">
-<<<<<<< HEAD
+
 				<h2 class="titrepresentation" style="font-family: 'Dancing Script', cursive; font-size: 50px !important; color: #AA6B29;">Présentation de la sophrologie</h2>
-=======
-				<h2 class="titrepresentation">Présentation de la sophrologie</h2>
->>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
-			
-				
 				
 				<div class="soustitre"><h3 class="toto">Historique</h3></div>
 				<img src="img/sophro.png" style="float: left; width: 300px; height: 300px; padding-right: 20px;">
@@ -195,18 +190,17 @@
 					<li><a href="#">Accueil</a></li>
 					<li><a href="#">Présentation</a></li>
 					<li><a href="#">Autres techniques</a></li>
-					<li><a href="#">Séction privé</a></li>
-					<li><a href="#">TSémoignage</a></li>
+					<li><a href="#">Séction abonné</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<p class="footer-company-name">ATHarmony &copy; 2017</p>
 			</div>
 			<div class="footer-center col-md-3">
 				<ul>
-					<li class="contactfooter">Contact </li>
-					<li><i class="fa fa-map-marker"></i>Avenue du Parc 89,1060 Bruxelles</li>
-					<li><i class="fa fa-phone"></i>02/539.03.60</li>
-					<li><i class="fa fa-envelope"></i><a href="mailto:sylviane.mol.cf@gmail.com">sylviane.mol.cf@gmail.com</a></li>
+					<li class="contactfooter">Contact</li>
+					<li><i class="fa fa-map-marker"></i>Chemin de la Malpensée 20, 1430 Rebecq</li>
+					<li><i class="fa fa-phone"></i>0479/245.109</li>
+					<li><i class="fa fa-envelope"></i><a href="mailto:sylviane.mol.cf@gmail.com">sylviane.atharmony@gmail.com</a></li>
 				</ul>
 			</div>
 			<div class="footer-right col-md-3">
@@ -215,9 +209,9 @@
 						Sylviane d’At Harmony est au service de votre sérénité et de votre bien-être à Rebecq Quenast et environs ( Tubize, Braine le château, Braine le comte, Hennuyères, Enghien, Virginal, Ittre, Soignies )
 				</p>
 				<div class="footer-icons">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-pinterest"></i></a>
+					<a href="https://www.facebook.com/sylvianeatharmony/" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/sylsophr" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.pinterest.com/sylvianemol/" target="_blank"><i class="fa fa-pinterest"></i></a>
 					<a href="#"><i class="fa fa-envelope"></i></a>
 					<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>
 </a>

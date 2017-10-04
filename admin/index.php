@@ -32,12 +32,9 @@ if(!isset($_SESSION['clef_de_session'])){
                 case "insertTemoign":
                     require_once 'insert/insert_temoign.php';
                     break;
-<<<<<<< HEAD
                 case "insertImage":
                     require_once 'insert/index.php';
                     break;
-=======
->>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
                 // on veut supprimer
                 case "delete":
                     require_once 'delete/delete.php';
