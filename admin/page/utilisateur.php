@@ -3,13 +3,13 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
     header("Location: ./");
 }
 
-<<<<<<< HEAD
+
 $recup = "SELECT u.id, u.login,u.mail, u.droit_groupe_id_droit, u.ladate 
     FROM utilisateur u ORDER BY u.droit_groupe_id_droit ASC;";
     
 $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 
-=======
+
 /*$requete = mysqli_query($db, "SELECT COUNT(id) AS nb FROM article;");
 $requete_assoc = mysqli_fetch_assoc($requete);
 $nb_tot = $requete_assoc['nb'];
@@ -25,7 +25,7 @@ if($_SESSION['idrole']==1||$_SESSION['idrole']==2){
 $recup_art = mysqli_query($db,"SELECT a.id, a.letitre, SUBSTRING(a.letexte,1,300) AS letexte, a.ladate, a.auteur_id, au.lelogin FROM article a INNER JOIN auteur au ON au.id = a.auteur_id $complement_sql ORDER BY a.ladate DESC LIMIT $limit, $par_page;");
 $pagination = maPagination($nb_tot, $pg,$lulu,$par_page);
 */
->>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -154,7 +154,7 @@ $pagination = maPagination($nb_tot, $pg,$lulu,$par_page);
                     </div>
                 </div>
                
-<<<<<<< HEAD
+
                   <div class="row">
         <section class="col-md-12 col-sm-12 fontstyle">
             <article class="presentation">
@@ -226,8 +226,7 @@ $pagination = maPagination($nb_tot, $pg,$lulu,$par_page);
         </section>
 
     </div>  
-=======
->>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
+
             </div>
             <!-- /.container-fluid -->
 

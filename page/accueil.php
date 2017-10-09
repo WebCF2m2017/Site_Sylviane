@@ -206,7 +206,7 @@ $recup_image = mysqli_query($db,$image)or die(mysqli_error($db));
 			                <div class="<?=$a?>">
 					  			<div class="row">
 					    			<div class="col-sm-12">
-					      				<p class="commentaire"><?php echo $ligne['texte']?></p>
+					      				<p class="commentaire"><?php echo htmlspecialchars_decode($ligne['texte'])?></p>
 					      				<small><strong><?php echo $ligne['login']?></strong></small>
 					    			</div>
 					  			</div>

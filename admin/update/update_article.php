@@ -10,23 +10,23 @@ if (!isset($_GET['id']) || !ctype_digit($_GET['id'])) {
 }
 
 // si le formulaire est envoyé
-<<<<<<< HEAD
+
 if (isset($_GET['id']) && isset($_POST['titre']) && isset($_POST['texte']) && isset($_POST['url'])) {
     // mise en variable locale
 
-=======
+
 if (isset($_POST['id']) && isset($_POST['titre']) && isset($_POST['texte']) && isset($_POST['url'])) {
     // mise en variable locale
->>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
+
     $letitre = htmlspecialchars(strip_tags(trim($_POST['titre'])), ENT_QUOTES);
     $letexte = htmlspecialchars(strip_tags(trim($_POST['texte'])), ENT_QUOTES);
     $url = htmlspecialchars(strip_tags(trim($_POST['url'])), ENT_QUOTES);
     // si l'id est un format non valide (tentative d'attaque), il vaudra 0
-<<<<<<< HEAD
+
     $idarticle = (int) $_GET['id'];
-=======
+
     $idarticle = (int) $_POST['id'];
->>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
+
     //var_dump($_POST['auteur_id'],$auteur_id);
     // vérification de validité des champs (ils envoient tous == true)
     if ($letitre && $letexte && $url && $idarticle) {
@@ -219,11 +219,11 @@ if (isset($_POST['id']) && isset($_POST['titre']) && isset($_POST['texte']) && i
                <div class="row">
         <section class="col-md-12 col-sm-12 fontstyle">
             <article class="presentation">
-<<<<<<< HEAD
+
                 <form action="" name="onsenfout" method="POST">
-=======
+
                 <form action="" name="onsenfout" method="post">
->>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
+
                     <h3>Titre de l'article</h3>
                     <input style="width: 70vw;" type="text" name="titre" placeholder="Votre titre" value="<?= $ligne['titre'] ?>" required /><br/><br/>
                     <h3>URL de l'image</h3>
@@ -251,11 +251,7 @@ if (isset($_POST['id']) && isset($_POST['titre']) && isset($_POST['texte']) && i
         <!-- /#page-wrapper -->
 
     </div>
-<<<<<<< HEAD
-       
-        
-=======
->>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
+
     <!-- /#wrapper -->
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

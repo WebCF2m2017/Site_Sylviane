@@ -146,11 +146,12 @@ hr{
 				<h2 class="titrepresentation" style="font-family: 'Dancing Script', cursive; font-size: 50px !important; color: #AA6B29;">Qui suis-je?</h2>
 
 				<img class='photoprofile' src="img/sylviane.png">
-				<p>La sophrologie par son approche psychocorporelle vise à réharmoniser notre corps, nos émotions et notre mental.  Elle permet de retrouver l’équilibre si précieux pour notre bien-être. </p>
-				<p>Les huiles essentielles et fleurs de Bach par leurs actions sur notre sphère émotionnelle peuvent renforcer les bienfaits de la sophrologie.</p>
-				<p>Des outils d’apprentissage intégrés vous soutiennent non seulement pendant votre scolarité mais aussi tout au long de la vie en optimisant vos activités intellectuelles et vous permettent également d’apporter un soutien plus efficace mais également plus serein aux devoirs de vos enfants </p>
-				<p>Une approche de la communication par la méthode Gordon, vous aide à améliorer vos relations aux autres tant dans la sphère familiale, intime, amicale que professionnelle.</p>
-				<p>La réflexologie plantaire par sa vision globale du corps permet d’augmenter votre vitalité, votre énergie, favorise l’élimination des toxines, renforce votre immunité.  Par son action à distance, elle permet de participer à un meilleur fonctionnement des organes de l’ensemble du corps</p>
+				<p>Licenciée en science psychologiques et pédagogiques (ULB – 1985), j’ai souhaité continuer à développer mes compétences durant toute ma carrière de référent pédagogique dans un centre de formation pour adultes. Au fil des découvertes a germé le projet d’un atelier pédagogique. Son but est de donner des outils pour faciliter l’apprentissage tant sur le plan cognitif (comment mieux utiliser ses ressources) qu’émotionnel (ne plus perdre ses moyens à cause du stress) </p>
+				<p>C’est ainsi que je me suis formée à la gestion du stress et des émotions, aux techniques de développement personnel, de bien-être et de soutien pédagogique.
+
+				La sophrologie, la réflexologie plantaire, les techniques de bien-être par les huiles essentielles, les fleurs de Bach, l’approche Gordon de la communication, l’analyse transactionnelle, le brain gym, la gestion mentale font partie des approches qui m’ont séduite</p>
+				<p>Devenue sophrologue, j’ai décidé d’élargir mes activités et proposer de partager mes expériences positives en cabinet privé, c’est ainsi qu’est né At Harmony.</p>
+				<p>Forte d’une pratique dans mes activités salariées et privées, j’ambitionne de participer au mieux-être de qui voudra bien m’accorder sa confiance.</p>
 			</article>
 		</section>
 
