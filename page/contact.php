@@ -168,15 +168,15 @@ hr{
                   <form class="form-horizontal">
                     <div class="form-group">
                       <label for="exampleInputName2">Votre Nom</label>
-                      <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                      <input type="text" class="form-control" id="exampleInputName2" placeholder="Votre nom">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail2">Votre Email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="email.lulu@example.com">
                     </div>
                     <div class="form-group ">
                       <label for="exampleInputText">Votre Message</label>
-                     <textarea  class="form-control" placeholder="Description"></textarea> 
+                     <textarea  class="form-control" placeholder="Votre message"></textarea> 
                     </div>
                     <button type="submit" class="btn blue">Envoyer</button>
                   </form>

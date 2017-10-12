@@ -144,7 +144,7 @@ $pagination = maPagination($nb_tot, $pg,$lulu,$par_page);
                                 <i class="fa fa-dashboard"></i> <a href="./">Accueil</a>
                             </li>
                              <li class="active">
-                                <i class="fa fa-fw fa-file"></i> Audio
+                                <i class="fa fa-fw fa-file"></i> Articles
                             </li>
                         </ol>
                     </div>

@@ -4,7 +4,7 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
 }
 
 
-$recup="SELECT * FROM files WHERE type like 'audio%'  ORDER BY id DESC limit 3";
+$recup="SELECT * FROM files WHERE type like 'audio%'  ORDER BY id DESC";
 
     
 $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
@@ -90,17 +90,17 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 			                </tr>
 			            </thead>
 			            	<?php
-            while ($ligne = mysqli_fetch_assoc($recup_sql)){
+            while ($ligne =mysqli_fetch_assoc($recup_sql)){
                 ?>
 			            <tbody>
 			                <tr>
 
-			                    <td><?=$ligne['title']?></td>
-			                    <td><?=$ligne['description']?></td>
+			                    <td><?= htmlentities($ligne['title'])?></td>
+			                    <td><?= htmlentities($ligne['description'])?></td>
 			                    <td>    
-			                        <audio controls>
-			                           <?=$ligne['url']?>
-			                        </audio>
+			                        <audio controls="controls">
+									  <source src="<?= $ligne['url']?>" type="audio/mp3" />
+									</audio>
 			                    </td>
 			                </tr>
 			                

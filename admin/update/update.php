@@ -1,56 +1,48 @@
 <?php
-if (!strstr($_SERVER['PHP_SELF'], "index.php")) {
-    header("Location: ./");
-    exit();
-}
-// on vérifie la variable $_GET id
-if (!isset($_GET['id']) || !ctype_digit($_GET['id'])) {
-    header("Location: ./");
-    exit();
-}
 
-    // var_dump($_POST);
+// on vérifie l'existance des 4 variables POST, qui ne doivent pas être vides (2 prem) et de type numérique (3,4) et la 4eme doit correspondre à update_article.php
+if(isset($_POST['titre'])&&!empty($_POST['titre'])
+   && isset($_POST['texte'])&&!empty($_POST['texte'])
+   && isset($_POST['url'])&& ctype_digit($_POST['url'])
+   && isset($_POST['id'])&& ctype_digit($_POST['id'])&& $_POST['id']==$_GET['update']
+   && isset($_POST['ladate'])){
     
-    // var_dump($_GET['id']);
+    // pour ladate, on vérifie si on sait la transformer en timestamp
+    $date = strtotime($_POST['ladate']);
+    // non convertible en date
+    if(!$date){
+        $datesql ="";
+    }else{
+        $datesql = ", ladate='{$_POST['ladate']}' ";
+    }
 
+    // on place ces variables dans des variables locales
+        $titre = htmlspecialchars(strip_tags(trim($_POST['titre'])),ENT_QUOTES);
+        // idem en 1 ligne
+        $texte = htmlspecialchars(strip_tags(trim($_POST['texte'])),ENT_QUOTES);
+        $url = htmlspecialchars(strip_tags(trim($_POST['url'])),ENT_QUOTES);
+        // technique permettant d'être sûre qu'une attaque sql est impossible!
+        // $texte = mysqli_real_escape_string($db,$texte);
+        // conversion de id en integer
+        $id = (int) $_POST['id'];
 
-
-if (isset($_GET['id']) && isset($_POST['titre']) && isset($_POST['texte']) && isset($_POST['url']) && isset($_POST['send'])) {
-    // mise en variable locale
-
-    $letitre = htmlspecialchars(strip_tags(trim($_POST['titre'])), ENT_QUOTES);
-    $letexte = htmlspecialchars(strip_tags(trim($_POST['texte'])), ENT_QUOTES);
-    $url = htmlspecialchars(strip_tags(trim($_POST['url'])), ENT_QUOTES);
-    // si l'id est un format non valide (tentative d'attaque), il vaudra 0
-
-    $idarticle = (int) $_GET['id'];
-
-    // var_dump($_POST);
-
-    //var_dump($_POST['auteur_id'],$auteur_id);
-    // vérification de validité des champs (ils envoient tous == true)
-    if ($letitre && $letexte && $url && $idarticle) {
-        // si on est utilisateur
-            if (isset($_GET['id'])) {
-                $sql_update = "UPDATE article SET titre='$letitre',texte='$letexte',url='$url' WHERE id=$idarticle;";
-            } else {
-                $erreur = "Manipulation foirée!";
-            }
-        } else {
-            $sql_update = "UPDATE article SET titre='$letitre',texte='$letexte',url='$url' WHERE id=$idarticle;";
-        }
-        // update
-        $on_update = mysqli_query($db, $sql_update);
-        header("Location: ./");
-       
-// on arrive sur le formulaire    
-} else {
+    // On insert l'article
+    $sql ="UPDATE article SET titre='$titre',texte='$texte',url='$url' WHERE id=$id;";
+    
+    $recup_utils = mysqli_query($db,$sql)or die("Echec de l'update: ". mysqli_error($db));
+    // si on veut une redirection (aucune erreur)
+    
+    header("Location: ./");
+    
+   }elseif($erreur){
+       $erreur = "Modification non effectuée";
+   }else{
     // on récupère l'id de l'article et on le transforme en int
     $idarticle = (int) $_GET['id'];
     // requête pour remplir les champs avec l'article
     $sql_recup = "SELECT a.id, a.titre, a.texte,a.url 
         FROM article a 
-        WHERE a.id=$idarticle";
+        WHERE a.id=$id";
     // récupération de l'article
     $recup_article = mysqli_query($db, $sql_recup);
     // si on a un article
@@ -61,13 +53,14 @@ if (isset($_GET['id']) && isset($_POST['titre']) && isset($_POST['texte']) && is
         $erreur = "Article non existant!";
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -100,7 +93,6 @@ if (isset($_GET['id']) && isset($_POST['titre']) && isset($_POST['texte']) && is
       height: 500,
         language_url: ' tinymce_languages/langs/fr_FR.js',
       theme: 'modern',
-      encoding: "UTF-8",
       plugins: [
         'advlist autolink lists link image charmap print preview hr anchor pagebreak',
         'searchreplace wordcount visualblocks visualchars code fullscreen',
@@ -213,7 +205,13 @@ if (isset($_GET['id']) && isset($_POST['titre']) && isset($_POST['texte']) && is
                         </h1>
                     </div>
                 </div>
-
+                <?php
+                    if(isset($erreur)){
+                        echo "<h3>$erreur</h3> <a onclick='history.go(-1);' href=''>Retour au formulaire</a>";
+                    }else{
+                        echo "<h2>Article Modifié!</h2>";
+                    }
+                ?>
                <!-- INSERTION D'ARTICLE -->
              
               
@@ -234,6 +232,7 @@ if (isset($_GET['id']) && isset($_POST['titre']) && isset($_POST['texte']) && is
                 </form>
             </article>
            <style>
+               
                input{
                 width: 200px;
                 margin: 0;
@@ -242,6 +241,7 @@ if (isset($_GET['id']) && isset($_POST['titre']) && isset($_POST['texte']) && is
                }
            </style>
         </section>
+
     </div>  
             </div>
             <!-- /.container-fluid -->

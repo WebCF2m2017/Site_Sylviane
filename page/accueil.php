@@ -15,7 +15,7 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
         ORDER BY t.ladate DESC
         limit 3;
     ";
-    $image="SELECT * FROM files WHERE type like 'image%'  ORDER BY id DESC limit 3";
+    $image="SELECT * FROM files WHERE type like 'image%'  ORDER BY id ASC limit 5";
 
 $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 $recup_lulu = mysqli_query($db,$lulu)or die(mysqli_error($db));
@@ -91,6 +91,8 @@ $recup_image = mysqli_query($db,$image)or die(mysqli_error($db));
 			    	<li data-target="#1" data-slide-to="0" class="active"></li>
 			        <li data-target="#1" data-slide-to="1"></li>
 			        <li data-target="#1" data-slide-to="2"></li>
+			        <li data-target="#1" data-slide-to="4"></li>
+			        <li data-target="#1" data-slide-to="5"></li>
 			    </ol>
       			<div class="carousel-inner">
       				<?php
@@ -169,7 +171,7 @@ $recup_image = mysqli_query($db,$image)or die(mysqli_error($db));
                 <article class="col-md-4 col-sm-12 artcile1">
 					<div class="box">				
 						<h2><?=$ligne['titre']?></h2>
-						<p><?php echo $ligne['letexte']?>...</p>
+						<p><?php echo html_entity_decode($ligne['letexte'])?>...</p>
 						<div class="div">
 							<a href="?article" class="btn blue">Lire la suite</a>
 						</div>
@@ -206,7 +208,7 @@ $recup_image = mysqli_query($db,$image)or die(mysqli_error($db));
 			                <div class="<?=$a?>">
 					  			<div class="row">
 					    			<div class="col-sm-12">
-					      				<p class="commentaire"><?php echo htmlspecialchars_decode($ligne['texte'])?></p>
+					      				<p class="commentaire"><?php echo html_entity_decode($ligne['texte'])?></p>
 					      				<small><strong><?php echo $ligne['login']?></strong></small>
 					    			</div>
 					  			</div>
