@@ -2,7 +2,7 @@
     "name": "webform/10-upload-img",
     "type": "library",
     "require": {
-        "twig/twig": "2.4.*",
+        "twig/twig": "2.4.* || 2.16.*",
         "kraksoft/colorbox": "1.5.*"
     },
     "authors": [
